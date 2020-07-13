@@ -1,8 +1,11 @@
+/*MTA Data Search reads txt files of weekly MTA Data, searches for specific stations, and exports this data to Excel.
+* Pulls key data in the MTA designated format.
+* MTA turnstile data can be found at: http://web.mta.info/developers/turnstile.html
+*/
 import java.io.*;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import javax.xml.crypto.Data;
 import java.util.*;
 
@@ -46,17 +49,20 @@ class DataLine {
 
 public class Main {
     public static void main(String[] args)throws Exception {
+        //Following lines can be customized based on user needs.
         String[] columns = {"Station", "Linename", "Date", "Time", "Entries", "Exits"};
         File file = new File("C:\\Users\\nolan\\Desktop\\COVID-19\\MTA Data Search\\turnstile_200620.txt");
+        //Necessary declarations to read file
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st;
         List<DataLine> DataList = new ArrayList<>();
 
         while ((st = br.readLine()) != null){
-            if (st.contains("72 ST")) {     // Change this string to search for other stations
-                String tokens[] = st.split(",");
-                DataList.add(new DataLine(tokens[3], tokens[4], tokens[6], tokens[7], tokens[9], tokens[10]));
-
+            //st.contains("") refers to target station name.
+            if (st.contains("72 ST")) {     // Change this string to search for other stations.
+                String tokens[] = st.split(","); //MTA compiles data with separations by comma.
+                DataList.add(new DataLine(tokens[3], tokens[4], tokens[6], tokens[7], tokens[9], tokens[10])); //Target data
+                //Sets up Excel workbook.
                 Workbook workbook = new XSSFWorkbook();
                 CreationHelper createHelper = workbook.getCreationHelper();
                 Sheet sheet = workbook.createSheet("TITLE");
@@ -89,6 +95,7 @@ public class Main {
                     sheet.autoSizeColumn(i);
                 }
 
+                //Change the following line to change the title of the Excel file.
                 FileOutputStream fileOut = new FileOutputStream("poi-generated.xlsx");
                 workbook.write(fileOut);
                 fileOut.close();
@@ -96,6 +103,4 @@ public class Main {
             }
         }
     }
-
-
 }
