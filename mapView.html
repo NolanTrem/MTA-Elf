@@ -18,6 +18,9 @@
     var map = L.mapbox.map('map')
         .setView([40.78, -74.0060], 12)
         .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+    L.marker([40.779, -73.982]).addTo(map)
+        .bindPopup('72nd Street Station<br> High Risk')
+        .openPopup();
 </script>
 </body>
 </html>
