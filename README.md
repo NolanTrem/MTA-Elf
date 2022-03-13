@@ -1,6 +1,7 @@
 # feLine
 ###The _purrfect_ public transportation assistant
 
+<img src="/Users/nolantremelling/Downloads/lina-white background.png" width="150" height="170">
 
 A holistic and algorithmic approach to decrease overcrowding and the spread of Covid-19 on public transportation.
 Focused on the democratization and accessibility of complex and ever-changing data for the public.
