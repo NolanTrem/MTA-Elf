@@ -1,5 +1,5 @@
 # feLine
-###The _purrfect_ public transportation assistant
+### The _purrfect_ public transportation assistant
 
 <img src="/Users/nolantremelling/Downloads/lina-white background.png" width="150" height="170">
 
@@ -16,7 +16,7 @@ This project was part of
 with the goal of making mass transit safer post-Covid-19 under the direction of faculty leads Mysore Nagaraja and
 Sharon Di. The project was awarded 1st place in the competition. Design guidelines follow:
 
->###Overview
+> ### Overview
 > New York City’s economy and livelihood depends heavily on the Mass Transit System (Subways, Buses, Commuter
 > Railroads). Mass Transit carries 6 million people every day. Due to the COVID-19 pandemic and subsequent lockdown,
 > transit ridership has been reduced to about 10 percent. The challenge is how the system deals with crowds, buses,
@@ -26,7 +26,7 @@ Sharon Di. The project was awarded 1st place in the competition. Design guidelin
 > hand, as Columbia has been preparing for ramping up labs with an emphasis on social distancing within the campus,
 > higher risks could arise in the process when the employees commute between home and campus, especially those who
 > have to take MTA transit. 
-> ###Objectives
+> ### Objectives
 > This project aims to address travel safety and equity concerns of essential workers and provide a responsible, safe,
 > and integrated transportation solution for the Columbia community and the general NYC population. To operate both the
 > MTA system and Columbia transportation system safely when NYC reopens, your team will have the following potential
@@ -36,11 +36,11 @@ Sharon Di. The project was awarded 1st place in the competition. Design guidelin
 of transit riders. Also, how can we provide recommendations to suggest travelers to change their mobility pattern?
 >- Any modifications to Station entrances, platforms etc and how effectively such modifications be accomplished in
 > record time? How can we coordinate MTA and Columbia transportation service to ensure a seamless commute?
-> ###Project Goal
+> ### Project Goal
 > Your goal is to design a solution that will provide a safer, more reliable, and integrated transit system for the
 > Columbia community and New Yorkers during episodes of elevated health risks, such as the waning periods of a pandemic
 > or the perennial flu season.
-> ###Assessment
+> ### Assessment
 > Your efforts will be judged according to:
 > - Quality of Data Collected and sources. 
 > - Criteria for Analysis
